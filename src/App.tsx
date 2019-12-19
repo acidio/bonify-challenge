@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+
+import Map from './components/Map';
+
+const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY as string;
+
+export interface Location {
+  lat: number;
+  lng: number;
+}
 
 const App: React.FC = () => {
+  const [locations, setLocations] = useState<Location[]>([]);
+
+  const onMapClick = (location: Location) =>
+    setLocations([...locations, location]);
+
+  useEffect(() => {
+    console.log('locations', locations);
+  }, [locations]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Map onMapClick={onMapClick} apiKey={GOOGLE_MAPS_API_KEY} />
+    </>
   );
-}
+};
 
 export default App;
