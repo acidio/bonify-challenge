@@ -30,7 +30,10 @@ Map.defaultProps = {
   initialConfig: {
     center: { lat: 48, lng: 8 },
     zoom: 5,
-    streetViewControl: false
+    streetViewControl: false,
+    mapTypeControl: false,
+    zoomControl: false,
+    fullscreenControl: false
   }
 };
 
