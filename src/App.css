@@ -1,0 +1,11 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 991px) {
+  #main {
+    flex-direction: row-reverse;
+  }
+}

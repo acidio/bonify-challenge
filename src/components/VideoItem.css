@@ -1,0 +1,29 @@
+.video-item {
+  border: 1px solid #efefef;
+  color: #616161;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 5px;
+  padding: 2px;
+  text-decoration: none;
+}
+
+.video-item:hover {
+  background-color: #29ccab;
+  color: #ffffff;
+  transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  -webkit-transition: background-color 0.5s ease-out;
+}
+
+.video-item .title {
+  flex-grow: 1;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.video-item .thumbnail {
+  flex-shrink: 0;
+  margin-right: 5px;
+}

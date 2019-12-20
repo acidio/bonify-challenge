@@ -19,7 +19,11 @@ const Map: React.FC<Props> = ({ apiKey, initialConfig, onMapClick }) => {
   });
   useMapClickEvent({ onMapClick, googleMapAPI, map });
 
-  return <div id="map-container" ref={mapContainerRef}></div>;
+  return (
+    <div id="map-container">
+      <div id="map" ref={mapContainerRef}></div>
+    </div>
+  );
 };
 
 Map.defaultProps = {

@@ -1,0 +1,14 @@
+#sidebar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 10px;
+  height: 100vh;
+  overflow: auto;
+}
+
+#sidebar h1 {
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 0 0 10px;
+}
