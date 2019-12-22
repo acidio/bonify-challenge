@@ -2,6 +2,8 @@ import React from 'react';
 
 import './VideoItem.css';
 
+const videoUrl = (id: string) => `https://www.youtube.com/watch?v=${id}`;
+
 const VideoItem = ({
   id: { videoId },
   snippet: {
@@ -12,7 +14,7 @@ const VideoItem = ({
   }
 }: any) => (
   <a
-    href={`https://www.youtube.com/watch?v=${videoId}`}
+    href={videoUrl(videoId)}
     key={videoId}
     target="_blank"
     rel="noopener noreferrer"
