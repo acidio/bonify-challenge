@@ -9,7 +9,12 @@ interface Props {
   onMapClick: (...args: any) => void;
 }
 
-const Map: React.FC<Props> = ({ apiKey, initialConfig, onMapClick }) => {
+const Map: React.FC<Props> = ({
+  apiKey,
+  initialConfig,
+  onMapClick,
+  children
+}) => {
   const googleMapAPI = useGoogleMapAPI(apiKey);
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const map = useMap({
@@ -22,6 +27,7 @@ const Map: React.FC<Props> = ({ apiKey, initialConfig, onMapClick }) => {
   return (
     <div id="map-container">
       <div id="map" ref={mapContainerRef}></div>
+      {children}
     </div>
   );
 };
