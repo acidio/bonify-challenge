@@ -1,5 +1,4 @@
 #videos-container {
-  height: 20vh;
   display: flex;
   flex-direction: column;
   flex: 1;

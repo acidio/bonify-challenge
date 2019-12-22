@@ -6,6 +6,7 @@
   margin-bottom: 5px;
   padding: 2px;
   text-decoration: none;
+  min-height: 90px;
 }
 
 .video-item:hover {
@@ -25,5 +26,4 @@
 
 .video-item .thumbnail {
   flex-shrink: 0;
-  margin-right: 5px;
 }
