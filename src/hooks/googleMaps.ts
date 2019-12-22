@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-// Loads Google Maps API
+// Custom hook for loading Google Maps API
 export const useGoogleMapAPI = (apiKey: string) => {
   const [googleMapAPI, setGoogleMapAPI] = useState();
 
@@ -26,7 +26,7 @@ interface UseMapProps {
   initialConfig?: google.maps.MapOptions;
 }
 
-// Creates a map
+// Custom hook to initiate a Google Map
 export const useMap = ({
   googleMapAPI,
   mapContainerRef,
@@ -53,6 +53,7 @@ interface UseMapClickEventProps {
   map: google.maps.Map | undefined;
 }
 
+// Custom hook to add on click event on a existing Google Maps
 export const useMapClickEvent = ({
   onMapClick,
   googleMapAPI,
