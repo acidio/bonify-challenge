@@ -24,6 +24,7 @@ const Navigation: React.FC<Props> = ({
     <div id="navigation-container">
       {onClickBack && (
         <button
+          data-testid="btn-back"
           type="button"
           className="btn-back"
           onClick={onClickBack}
@@ -34,6 +35,7 @@ const Navigation: React.FC<Props> = ({
       )}
       {onClickForward && (
         <button
+          data-testid="btn-forward"
           type="button"
           className="btn-forward"
           onClick={onClickForward}
