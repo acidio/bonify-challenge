@@ -1,0 +1,35 @@
+#navigation-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+#navigation-container button {
+  text-decoration: none;
+  text-align: center;
+  height: 40px;
+  display: table-cell;
+  vertical-align: middle;
+  color: #565656;
+  user-select: none;
+  font-size: 18px;
+  background-color: #ffffff;
+  padding: 0px 17px;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  background-clip: padding-box;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  min-width: 65px;
+  cursor: pointer;
+}
+
+#navigation-container button:hover {
+  background-color: #e6e6e6;
+  color: rgb(0, 0, 0);
+}
+
+#navigation-container button:disabled {
+  background-color: #dadada;
+  color: #888888;
+}
