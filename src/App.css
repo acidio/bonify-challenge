@@ -9,3 +9,7 @@
     flex-direction: row-reverse;
   }
 }
+
+.no-locations {
+  color: red;
+}

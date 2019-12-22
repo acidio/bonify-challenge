@@ -4,8 +4,3 @@
   flex-direction: column;
   flex: 1;
 }
-
-.no-locations {
-  color: red;
-  text-align: center;
-}
